@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로그램 소개 - 서울최강기숙학원</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/program.css">
+    <link rel="stylesheet" href="css/scroll-animation.css">
+
+    <!-- 폰트 -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR:wght@200..900&display=swap"
+        rel="stylesheet">
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="220"
+                        height="60">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <g transform="translate(30, 30)">
+                            <polygon points="0,-18 15.6,-9 15.6,9 0,18 -15.6,9 -15.6,-9" fill="url(#grad1)" />
+                            <polygon points="0,-10 9,-5 9,5 0,10 -9,5 -9,-5" fill="white" opacity="0.9" />
+                        </g>
+                        <text x="65" y="35" font-family="Pretendard, sans-serif" font-size="20" font-weight="700"
+                            fill="#1e293b">
+                            서울최강기숙학원
+                        </text>
+                    </svg>
+                </a>
+            </div>
+            <div class="header-right">
+                <a href="#">로그인 / 회원가입</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">프로그램 소개</h1>
+            <p class="hero-subtitle">체계적인 커리큘럼으로 목표를 향해 나아갑니다</p>
+        </div>
+    </section>
+
+    <section class="programs">
+        <div class="container">
+            <!-- 탭 메뉴 -->
+            <div class="tab-menu">
+                <button class="tab-btn active" data-tab="regular">정규 수업</button>
+                <button class="tab-btn" data-tab="winter">윈터 스쿨</button>
+            </div>
+
+            <!-- 정규 수업 탭 -->
+            <div class="tab-content active" id="regular">
+                <div class="program-intro">
+                    <h2>2027 정규 수업</h2>
+                    <p class="intro-text">
+                        체계적인 학습 시스템과 최고의 강사진이 함께하는 정규 프로그램입니다.<br>
+                        학생 개개인의 목표 달성을 위해 맞춤형 커리큘럼을 제공합니다.
+                    </p>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <h3>체계적 커리큘럼</h3>
+                        <p>입시 전문가가 설계한 <br>단계별 학습 로드맵</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                        </div>
+                        <h3>1:1 맞춤 관리</h3>
+                        <p>담임 선생님의 밀착 학습 관리 시스템</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <h3>최적화된 시간표</h3>
+                        <p>효율적인 학습을 위한 과학적 시간 배분</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3>실시간 성적 관리</h3>
+                        <p>주간 테스트와 상세한 피드백 제공</p>
+                    </div>
+                </div>
+
+                <div class="program-details">
+                    <div class="detail-section">
+                        <h3>수업 기간</h3>
+                        <p>2027년 3월 ~ 2028년 2월</p>
+                        <p>(12개월)</p>
+                    </div>
+                    <div class="detail-section">
+                        <h3>수업 시간</h3>
+                        <p>월~토 07:00 - 23:00</p>
+                        <p>(자율학습 포함)</p>
+                    </div>
+                    <div class="detail-section">
+                        <h3>모집 인원</h3>
+                        <p>반별 20명 이내 소수정예</p>
+                    </div>
+                    <div class="detail-section">
+                        <h3>수업 과목</h3>
+                        <p>국어, 영어, 수학, 사회/과학 탐구</p>
+                    </div>
+                </div>
+
+                <div class="schedule-section">
+                    <h3>정규 시간표</h3>
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th>교시</th>
+                                <th>시간</th>
+                                <th>월</th>
+                                <th>화</th>
+                                <th>수</th>
+                                <th>목</th>
+                                <th>금</th>
+                                <th>토</th>
+                                <th>일</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="break-time">
+                                <td colspan="2">07:00 - 08:00</td>
+                                <td colspan="7">기상 및 아침 식사</td>
+                            </tr>
+                            <tr>
+                                <td>1교시</td>
+                                <td>08:00 - 09:00</td>
+                                <td>국어</td>
+                                <td>국어</td>
+                                <td>국어</td>
+                                <td>국어</td>
+                                <td>국어</td>
+                                <td>모의고사</td>
+                                <td>해설강의</td>
+                            </tr>
+                            <tr>
+                                <td>2교시</td>
+                                <td>09:00 - 10:00</td>
+                                <td>국어</td>
+                                <td>국어</td>
+                                <td>국어</td>
+                                <td>국어</td>
+                                <td>국어</td>
+                                <td>모의고사</td>
+                                <td>해설강의</td>
+                            </tr>
+                            <tr>
+                                <td>3교시</td>
+                                <td>10:00 - 11:00</td>
+                                <td>수학</td>
+                                <td>수학</td>
+                                <td>수학</td>
+                                <td>수학</td>
+                                <td>수학</td>
+                                <td>모의고사</td>
+                                <td>해설강의</td>
+                            </tr>
+                            <tr>
+                                <td>4교시</td>
+                                <td>11:00 - 12:00</td>
+                                <td>수학</td>
+                                <td>수학</td>
+                                <td>수학</td>
+                                <td>수학</td>
+                                <td>수학</td>
+                                <td>모의고사</td>
+                                <td>해설강의</td>
+                            </tr>
+                            <tr class="break-time">
+                                <td colspan="2">12:00 - 13:00</td>
+                                <td colspan="7">점심 식사 및 휴식</td>
+                            </tr>
+                            <tr>
+                                <td>5교시</td>
+                                <td>13:00 - 14:00</td>
+                                <td>영어</td>
+                                <td>영어</td>
+                                <td>영어</td>
+                                <td>영어</td>
+                                <td>영어</td>
+                                <td>모의고사</td>
+                                <td>자율학습</td>
+                            </tr>
+                            <tr>
+                                <td>6교시</td>
+                                <td>14:00 - 15:00</td>
+                                <td>영어</td>
+                                <td>탐구</td>
+                                <td>영어</td>
+                                <td>탐구</td>
+                                <td>논술</td>
+                                <td>모의고사</td>
+                                <td>자율학습</td>
+                            </tr>
+                            <tr>
+                                <td>7교시</td>
+                                <td>15:00 - 16:00</td>
+                                <td>탐구</td>
+                                <td>탐구</td>
+                                <td>탐구</td>
+                                <td>탐구</td>
+                                <td>논술</td>
+                                <td>모의고사</td>
+                                <td>자율학습</td>
+                            </tr>
+                            <tr>
+                                <td>8교시</td>
+                                <td>16:00 - 17:00</td>
+                                <td>탐구</td>
+                                <td>탐구</td>
+                                <td>탐구</td>
+                                <td>탐구</td>
+                                <td>논술</td>
+                                <td>모의고사</td>
+                                <td>자율학습</td>
+                            </tr>
+                            <tr class="break-time">
+                                <td colspan="2">17:00 - 18:00</td>
+                                <td colspan="7">저녁 식사 및 휴식</td>
+                            </tr>
+                            <tr class="self-study">
+                                <td colspan="2">18:00 - 23:00</td>
+                                <td colspan="7">자율학습 및 질의응답</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 가격 섹션 -->
+                <div class="pricing-section">
+                    <h3>수강료 안내</h3>
+                    <div class="pricing-card">
+                        <div class="pricing-amount">
+                            <span class="price-label">12개월 과정</span>
+                            <span class="price-value">18,000,000원</span>
+                        </div>
+                        <div class="pricing-details">
+                            <p>• 월 납부 시: <strong>1,500,000원</strong></p>
+                            <p>• 일괄 납부 시: <strong>17,100,000원</strong> (5% 할인)</p>
+                            <p>• 급식비 및 교재비 포함</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <button class="cta-btn">정규 수업 신청하기</button>
+                </div>
+            </div>
+
+            <!-- 윈터 스쿨 탭 -->
+            <div class="tab-content" id="winter">
+                <div class="program-intro">
+                    <h2>2027 윈터 스쿨</h2>
+                    <p class="intro-text">
+                        겨울방학을 활용한 집중 학습 프로그램입니다.<br>
+                        핵심 개념 정리와 심화 학습으로 새 학기를 완벽하게 준비합니다.
+                    </p>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <h3>집중 학습</h3>
+                        <p>단기간 최대 효율의 압축 커리큘럼</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3>핵심 정리</h3>
+                        <p>주요 과목별 핵심 개념 완전 정복</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3>선행 학습</h3>
+                        <p>다음 학기 미리 준비하기</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h3>소수 정예</h3>
+                        <p>15명 이하 집중 관리 시스템</p>
+                    </div>
+                </div>
+
+                <div class="program-details">
+                    <div class="detail-section">
+                        <h3>수업 기간</h3>
+                        <p>2026년 12월 ~ 2027년 2월 (8주)</p>
+                    </div>
+                    <div class="detail-section">
+                        <h3>수업 시간</h3>
+                        <p>월~금 08:00 - 22:00</p>
+                    </div>
+                    <div class="detail-section">
+                        <h3>모집 인원</h3>
+                        <p>반별 15명 이내 초소수정예</p>
+                    </div>
+                    <div class="detail-section">
+                        <h3>수업 과목</h3>
+                        <p>국어, 수학 집중 과정</p>
+                    </div>
+                </div>
+
+                <div class="schedule-section">
+                    <h3>윈터스쿨 시간표 예시</h3>
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th>시간</th>
+                                <th>활동</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>08:00 - 09:00</td>
+                                <td>기상 및 아침 식사</td>
+                            </tr>
+                            <tr>
+                                <td>09:00 - 12:00</td>
+                                <td>오전 집중 수업 (3교시)</td>
+                            </tr>
+                            <tr>
+                                <td>12:00 - 13:00</td>
+                                <td>점심 식사</td>
+                            </tr>
+                            <tr>
+                                <td>13:00 - 17:00</td>
+                                <td>오후 심화 수업 (4교시)</td>
+                            </tr>
+                            <tr>
+                                <td>17:00 - 18:00</td>
+                                <td>저녁 식사</td>
+                            </tr>
+                            <tr>
+                                <td>18:00 - 22:00</td>
+                                <td>자율학습 및 복습</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 가격 섹션 -->
+                <div class="pricing-section">
+                    <h3>수강료 안내</h3>
+                    <div class="pricing-card">
+                        <div class="pricing-amount">
+                            <span class="price-label">8주 과정</span>
+                            <span class="price-value">5,000,000원</span>
+                        </div>
+                        <div class="pricing-details">
+                            <p>• 등록비: <strong>5,000,000원</strong></p>
+                            <p>• 급식비 및 교재비 포함</p>
+                            <p>• 조기 등록 시 10% 할인 혜택</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <button class="cta-btn">윈터 스쿨 신청하기</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>서울최강기숙학원</h3>
+                    <p>대한민국 최상위 입시 기숙학원</p>
+                    <div class="footer-icon">
+                        <a href="#" class="icon-link insta"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="icon-link youtube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="icon-link kakao-talk"><i class="fa-brands fa-kakao-talk"></i></a>
+                    </div>
+                </div>
+                <div class="footer-mid">
+                    <h4>바로가기</h4>
+                    <ul>
+                        <li><a href="program.html">2027 정규 수업 모집요강</a></li>
+                        <li><a href="program.html">2027 윈터 스쿨 모집요강</a></li>
+                        <li><a href="#">2026학년도 실적</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">학습 자료실</a></li>
+                        <li><a href="#">강사 목록</a></li>
+                        <li><a href="#">급식 메뉴</a></li>
+                        <li><a href="#">정규 수업관 시설 · 공간 체험</a></li>
+                        <li><a href="#">오시는 길 / 교통 안내</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <h4>문의하기</h4>
+                    <p><i class="fa-solid fa-phone"></i> 02-1234-5678</p>
+                    <p><i class="fa-solid fa-clock"></i> 평일 09:00 - 18:00</p>
+                    <p><i class="fa-solid fa-location-dot"></i> 서울 강남구 역삼동</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>서울최강기숙학원 대표이사: 홍길동</p>
+                <p>사업자등록번호: 123-12-98765</p>
+                <p>&copy; 2025 서울최강기숙학원. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">개인정보처리방침</a>
+                    <span>|</span>
+                    <a href="#">이용약관</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+    <script src="js/program.js"></script>
+</body>
+
+</html>

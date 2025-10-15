@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오시는 길 - 서울최강기숙학원</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/program.css">
+    <link rel="stylesheet" href="css/location.css">
+    <link rel="stylesheet" href="css/scroll-animation.css">
+
+    <!-- 폰트 -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR:wght@200..900&display=swap"
+        rel="stylesheet">
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="220"
+                        height="60">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <g transform="translate(30, 30)">
+                            <polygon points="0,-18 15.6,-9 15.6,9 0,18 -15.6,9 -15.6,-9" fill="url(#grad1)" />
+                            <polygon points="0,-10 9,-5 9,5 0,10 -9,5 -9,-5" fill="white" opacity="0.9" />
+                        </g>
+                        <text x="65" y="35" font-family="Pretendard, sans-serif" font-size="20" font-weight="700"
+                            fill="#1e293b">
+                            서울최강기숙학원
+                        </text>
+                    </svg>
+                </a>
+            </div>
+            <div class="header-right">
+                <a href="#">로그인 / 회원가입</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero scroll-animate">
+        <div class="container">
+            <h1 class="hero-title">오시는 길</h1>
+            <p class="hero-subtitle">서울최강기숙학원으로 찾아오시는 방법을 안내합니다</p>
+        </div>
+    </section>
+
+    <section class="location scroll-animate">
+        <div class="container">
+            <!-- 지도 섹션 -->
+            <div class="map-section scroll-animate">
+                <h2 class="section-title">위치 안내</h2>
+
+                <!-- 카카오맵 임베드 -->
+                <div class="map-container">
+                    <iframe src="https://map.kakao.com/link/map/서울최강기숙학원,37.5,127" style="border:0;" allowfullscreen=""
+                        loading="lazy"></iframe>
+                </div>
+                <!-- 지도 링크 -->
+                <div class="map-links scroll-animate">
+                    <a href="https://map.kakao.com/link/map/서울최강기숙학원,37.5,127" target="_blank" class="map-link">
+                        카카오맵으로 보기 →
+                    </a>
+                    <a href="https://map.naver.com/v5/search/서울최강기숙학원" target="_blank" class="map-link">
+                        네이버지도로 보기 →
+                    </a>
+                </div>
+            </div>
+            <!-- 주소 및 연락처 -->
+            <div class="address-section scroll-animate">
+                <div class="address-grid">
+                    <div class="address-card">
+                        <h3>주소</h3>
+                        <p class="address-main">서울특별시 강남구 역삼동 1</p>
+                        <p class="address-sub">(역삼동, 서울최강빌딩 5층)</p>
+                    </div>
+
+                    <div class="address-card">
+                        <h3>대표번호</h3>
+                        <p class="address-main">02-1234-5678</p>
+                        <p class="address-sub">평일 09:00 - 18:00</p>
+                    </div>
+
+                    <div class="address-card">
+                        <h3>이메일</h3>
+                        <p class="address-main">info@seoulchoegang.com</p>
+                        <p class="address-sub">입학 문의 및 상담</p>
+                    </div>
+
+                    <div class="address-card">
+                        <h3>방문 상담</h3>
+                        <p class="address-main">사전 예약 필수</p>
+                        <p class="address-sub">평일 10:00 - 17:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>서울최강기숙학원</h3>
+                    <p>대한민국 최상위 입시 기숙학원</p>
+                    <div class="footer-icon">
+                        <a href="#" class="icon-link insta"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="icon-link youtube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="icon-link kakao-talk"><i class="fa-brands fa-kakao-talk"></i></a>
+                    </div>
+                </div>
+                <div class="footer-mid">
+                    <h4>바로가기</h4>
+                    <ul>
+                        <li><a href="program.html">2027 정규 수업 모집요강</a></li>
+                        <li><a href="program.html">2027 윈터 스쿨 모집요강</a></li>
+                        <li><a href="#">2026학년도 실적</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">학습 자료실</a></li>
+                        <li><a href="#">강사 목록</a></li>
+                        <li><a href="#">급식 메뉴</a></li>
+                        <li><a href="#">정규 수업관 시설 · 공간 체험</a></li>
+                        <li><a href="#">오시는 길 / 교통 안내</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <h4>문의하기</h4>
+                    <p><i class="fa-solid fa-phone"></i> 02-1234-5678</p>
+                    <p><i class="fa-solid fa-clock"></i> 평일 09:00 - 18:00</p>
+                    <p><i class="fa-solid fa-location-dot"></i> 서울 강남구 역삼동</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>서울최강기숙학원 대표이사: 홍길동</p>
+                <p>사업자등록번호: 123-12-98765</p>
+                <p>&copy; 2025 서울최강기숙학원. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">개인정보처리방침</a>
+                    <span>|</span>
+                    <a href="#">이용약관</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+    <script src="js/program.js"></script>
+</body>
+
+</html>

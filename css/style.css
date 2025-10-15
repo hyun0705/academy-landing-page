@@ -288,18 +288,15 @@ input[type="checkbox"] {
 
 /* 푸터 */
 .footer {
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 3rem;
-
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
-
-    border-top: solid 1px var(--gray-light);
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
 }
 
 .footer-left {
@@ -352,26 +349,31 @@ input[type="checkbox"] {
 }
 
 .icon-link.kakao-talk:hover {
-    color: #FEE500;
+    color: #645309;
     border: solid 1px #FEE500;
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
 
 .footer-mid h4 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
     color: var(--black);
 }
 
 .footer-mid ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3개 열 */
+    gap: 0.25rem 2.75rem;
     list-style: none;
-    color: var(--gray);
-    margin-left: 1rem;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-mid ul li a {
+    display: block;
     color: var(--gray);
     text-decoration: none;
     font-size: 0.875rem;
@@ -383,9 +385,8 @@ input[type="checkbox"] {
     color: var(--black);
 }
 
-
 .footer-right h4 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
     color: var(--black);
@@ -402,4 +403,54 @@ input[type="checkbox"] {
     justify-content: center;
     align-items: center;
     color: var(--gray);
+    padding-top: 2rem;
+    border-top: solid 1px var(--gray-light);
+    font-size: 0.875rem;
+}
+
+.footer-links a {
+    color: var(--gray);
+    text-decoration: none;
+    font-size: 0.75rem;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    font-weight: 600;
+    color: var(--black);
+}
+
+/* 스크롤 최상단 버튼 */
+.scroll-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    background: var(--black);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    box-shadow: var(--shadow-lg);
+    z-index: 1000;
+}
+
+.scroll-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-btn:hover {
+    background: var(--gray);
+    transform: translateY(-4px);
+}
+
+.scroll-btn:active {
+    background: var(--black);
+    transform: translateY(-2px);
 }

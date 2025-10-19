@@ -1,0 +1,149 @@
+/* 위치 섹션 */
+.location {
+    padding: 1rem 0;
+}
+
+/* 메뉴 소개 */
+.meal-intro {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.25rem;
+    font-family: var(--font-family-primary);
+
+    border-top: 2px solid var(--gray-border);
+    padding-top: 2rem;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    color: var(--gray);
+}
+
+/* 요일별 탭 */
+.day-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.day-tab {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--gray);
+    background: var(--white);
+    border: 2px solid var(--gray-border);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: var(--transition);
+    min-width: 100px;
+}
+
+.day-tab:hover {
+    border-color: var(--black);
+    color: var(--black);
+    transform: translateY(-5px);
+}
+
+.day-tab.active {
+    background: var(--black);
+    color: var(--white);
+    border-color: var(--black);
+    font-weight: 600;
+}
+
+/* 요일별 메뉴 콘텐츠 */
+.day-menu {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.day-menu.active {
+    display: block;
+}
+
+/* 메뉴 그리드 */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* 메뉴 카드 */
+.menu-card {
+    background: var(--white);
+    border: 2px solid var(--black);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: var(--transition);
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.menu-time {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.menu-period {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gray);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--gray-border);
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    font-size: 1rem;
+    color: var(--black);
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.menu-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: var(--black);
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-card {
+        padding: 1.5rem;
+    }
+
+    .menu-list li {
+        font-size: 0.875rem;
+    }
+}

@@ -6,9 +6,7 @@
 /* 지도 섹션 */
 .map-section {
     margin-bottom: 4rem;
-
 }
-
 
 .section-title {
     font-size: 2rem;
@@ -109,6 +107,7 @@
     line-height: 1.1;
     color: var(--gray);
 }
+
 
 /* 반응형 */
 @media (max-width: 1024px) {

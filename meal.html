@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>급식 메뉴 - 서울최강기숙학원</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/program.css">
+    <link rel="stylesheet" href="css/meal.css">
+    <link rel="stylesheet" href="css/scroll-animation.css">
+
+    <!-- 폰트 -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR:wght@200..900&display=swap"
+        rel="stylesheet">
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="220"
+                        height="60">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <g transform="translate(30, 30)">
+                            <polygon points="0,-18 15.6,-9 15.6,9 0,18 -15.6,9 -15.6,-9" fill="url(#grad1)" />
+                            <polygon points="0,-10 9,-5 9,5 0,10 -9,5 -9,-5" fill="white" opacity="0.9" />
+                        </g>
+                        <text x="65" y="35" font-family="Pretendard, sans-serif" font-size="20" font-weight="700"
+                            fill="#1e293b">
+                            서울최강기숙학원
+                        </text>
+                    </svg>
+                </a>
+            </div>
+            <div class="header-right">
+                <a href="#">로그인 / 회원가입</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero scroll-animate">
+        <div class="container">
+            <h1 class="hero-title">급식 메뉴</h1>
+            <p class="hero-subtitle">영양 가득한 기분 좋은 식사를 제공합니다</p>
+        </div>
+    </section>
+
+    <section class="meal">
+        <div class="container">
+            <div class="meal-intro scroll-animate">
+                <h2 class="section-title">이번 주 급식 메뉴</h2>
+                <p class="section-subtitle">매일 신선한 재료로 정성껏 준비합니다</p>
+            </div>
+
+            <!-- 요일별 탭 -->
+            <div class="day-tabs scroll-animate">
+                <button class="day-tab active" data-day="monday">월요일</button>
+                <button class="day-tab" data-day="tuesday">화요일</button>
+                <button class="day-tab" data-day="wednesday">수요일</button>
+                <button class="day-tab" data-day="thursday">목요일</button>
+                <button class="day-tab" data-day="friday">금요일</button>
+                <button class="day-tab" data-day="saturday">토요일</button>
+                <button class="day-tab" data-day="sunday">일요일</button>
+            </div>
+
+            <!-- 메뉴 내용 (요일별) -->
+            <div class="meal-contents scroll-animate">
+                <!-- 월요일 메뉴 -->
+                <div class="day-menu active" id="monday">
+                    <div class="menu-grid">
+                        <div class="menu-card breakfast">
+                            <div class="menu-time">🌅 아침</div>
+                            <h3 class="menu-period">07:00 - 08:00</h3>
+                            <ul class="menu-list">
+                                <li>흰쌀밥</li>
+                                <li>된장찌개</li>
+                                <li>계란후라이</li>
+                                <li>김치</li>
+                                <li>김구이</li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-card lunch">
+                            <div class="menu-time">☀️ 점심</div>
+                            <h3 class="menu-period">12:00 - 13:00</h3>
+                            <ul class="menu-list">
+                                <li>흰쌀밥</li>
+                                <li>김치찌개</li>
+                                <li>제육볶음</li>
+                                <li>깍두기</li>
+                                <li>콩나물무침</li>
+                                <li>계절과일</li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-card dinner">
+                            <div class="menu-time">🌙 저녁</div>
+                            <h3 class="menu-period">17:00 - 18:00</h3>
+                            <ul class="menu-list">
+                                <li>흰쌀밥</li>
+                                <li>미역국</li>
+                                <li>불고기</li>
+                                <li>김치</li>
+                                <li>시금치나물</li>
+                                <li>요구르트</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 화요일 메뉴 -->
+                <div class="day-menu" id="tuesday">
+                    <div class="menu-grid">
+                        <div class="menu-card breakfast">
+                            <div class="menu-time">🌅 아침</div>
+                            <h3 class="menu-period">07:00 - 08:00</h3>
+                            <ul class="menu-list">
+                                <li>흰쌀밥</li>
+                                <li>콩나물국</li>
+                                <li>스팸구이</li>
+                                <li>김치</li>
+                                <li>멸치볶음</li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-card lunch">
+                            <div class="menu-time">☀️ 점심</div>
+                            <h3 class="menu-period">12:00 - 13:00</h3>
+                            <ul class="menu-list">
+                                <li>카레라이스</li>
+                                <li>맑은국</li>
+                                <li>돈까스</li>
+                                <li>단무지</li>
+                                <li>샐러드</li>
+                                <li>계절과일</li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-card dinner">
+                            <div class="menu-time">🌙 저녁</div>
+                            <h3 class="menu-period">17:00 - 18:00</h3>
+                            <ul class="menu-list">
+                                <li>흰쌀밥</li>
+                                <li>순두부찌개</li>
+                                <li>삼치구이</li>
+                                <li>김치</li>
+                                <li>무생채</li>
+                                <li>요구르트</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 수요일 메뉴 -->
+                <div class="day-menu" id="wednesday">
+                    <div class="menu-grid">
+                        <div class="menu-card breakfast">
+                            <div class="menu-time">🌅 아침</div>
+                            <h3 class="menu-period">07:00 - 08:00</h3>
+                            <ul class="menu-list">
+                                <li>흰쌀밥</li>
+                                <li>미역국</li>
+                                <li>햄구이</li>
+                                <li>김치</li>
+                                <li>두부조림</li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-card lunch">
+                            <div class="menu-time">☀️ 점심</div>
+                            <h3 class="menu-period">12:00 - 13:00</h3>
+                            <ul class="menu-list">
+                                <li>흰쌀밥</li>
+                                <li>육개장</li>
+                                <li>닭강정</li>
+                                <li>깍두기</li>
+                                <li>오이무침</li>
+                                <li>계절과일</li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-card dinner">
+                            <div class="menu-time">🌙 저녁</div>
+                            <h3 class="menu-period">17:00 - 18:00</h3>
+                            <ul class="menu-list">
+                                <li>흰쌀밥</li>
+                                <li>된장찌개</li>
+                                <li>고등어구이</li>
+                                <li>김치</li>
+                                <li>깻잎절임</li>
+                                <li>요구르트</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 목요일 메뉴 -->
+                <div class="day-menu" id="thursday">
+                    <div class="menu-grid">
+                        <div class="menu-card breakfast">
+                            <div class="menu-time">🌅 아침</div>
+                            <h3 class="menu-period">07:00 - 08:00</h3>
+                            <ul class="menu-list">
+                                <li>흰쌀밥</li>
+                                <li>북어국</li>
+                                <li>계란말이</li>
+                                <li>김치</li>
+                                <li>어묵볶음</li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-card lunch">
+                            <div class="menu-time">☀️ 점심</div>
+                            <h3 class="menu-period">12:00 - 13:00</h3>
+                            <ul class="menu-list">
+                                <li>비빔밥</li>
+                                <li>미역국</li>
+                                <li>튀김만두</li>
+                                <li>김치</li>
+                                <li>나물</li>
+                                <li>계절과일</li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-card dinner">
+                            <div class="menu-time">🌙 저녁</div>
+                            <h3 class="menu-period">17:00 - 18:00</h3>
+                            <ul class="menu-list">
+                                <li>흰쌀밥</li>
+                                <li>감자탕</li>
+                                <li>LA갈비</li>
+                                <li>김치</li>
+                                <li>깍두기</li>
+                                <li>요구르트</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 금요일 메뉴 -->
+                <div class="day-menu" id="friday">
+                    <div class="menu-grid">
+                        <div class="menu-card breakfast">
+                            <div class="menu-time">🌅 아침</div>
+                            <h3 class="menu-period">07:00 - 08:00</h3>
+                            <ul class="menu-list">
+                                <li>흰쌀밥</li>
+                                <li>시래기국</li>
+                                <li>고등어구이</li>
+                                <li>김치</li>
+                                <li>계란찜</li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-card lunch">
+                            <div class="menu-time">☀️ 점심</div>
+                            <h3 class="menu-period">12:00 - 13:00</h3>
+                            <ul class="menu-list">
+                                <li>짜장밥</li>
+                                <li>짬뽕국</li>
+                                <li>탕수육</li>
+                                <li>단무지</li>
+                                <li>양파절임</li>
+                                <li>계절과일</li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-card dinner">
+                            <div class="menu-time">🌙 저녁</div>
+                            <h3 class="menu-period">17:00 - 18:00</h3>
+                            <ul class="menu-list">
+                                <li>흰쌀밥</li>
+                                <li>부대찌개</li>
+                                <li>치킨너겟</li>
+                                <li>김치</li>
+                                <li>콘샐러드</li>
+                                <li>요구르트</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 토요일 메뉴 -->
+                <div class="day-menu" id="saturday">
+                    <div class="menu-grid">
+                        <div class="menu-card breakfast">
+                            <div class="menu-time">🌅 아침</div>
+                            <h3 class="menu-period">07:00 - 08:00</h3>
+                            <ul class="menu-list">
+                                <li>흰쌀밥</li>
+                                <li>청국장</li>
+                                <li>김구이</li>
+                                <li>김치</li>
+                                <li>멸치볶음</li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-card lunch">
+                            <div class="menu-time">☀️ 점심</div>
+                            <h3 class="menu-period">12:00 - 13:00</h3>
+                            <ul class="menu-list">
+                                <li>김치볶음밥</li>
+                                <li>우동국물</li>
+                                <li>야채튀김</li>
+                                <li>단무지</li>
+                                <li>깍두기</li>
+                                <li>계절과일</li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-card dinner">
+                            <div class="menu-time">🌙 저녁</div>
+                            <h3 class="menu-period">17:00 - 18:00</h3>
+                            <ul class="menu-list">
+                                <li>흰쌀밥</li>
+                                <li>설렁탕</li>
+                                <li>불고기</li>
+                                <li>김치</li>
+                                <li>배추겉절이</li>
+                                <li>요구르트</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 일요일 메뉴 -->
+                <div class="day-menu" id="sunday">
+                    <div class="menu-grid">
+                        <div class="menu-card breakfast">
+                            <div class="menu-time">🌅 아침</div>
+                            <h3 class="menu-period">07:00 - 08:00</h3>
+                            <ul class="menu-list">
+                                <li>흰쌀밥</li>
+                                <li>무국</li>
+                                <li>계란후라이</li>
+                                <li>김치</li>
+                                <li>김구이</li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-card lunch">
+                            <div class="menu-time">☀️ 점심</div>
+                            <h3 class="menu-period">12:00 - 13:00</h3>
+                            <ul class="menu-list">
+                                <li>돈까스 덮밥</li>
+                                <li>맑은국</li>
+                                <li>치즈스틱</li>
+                                <li>단무지</li>
+                                <li>샐러드</li>
+                                <li>계절과일</li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-card dinner">
+                            <div class="menu-time">🌙 저녁</div>
+                            <h3 class="menu-period">17:00 - 18:00</h3>
+                            <ul class="menu-list">
+                                <li>흰쌀밥</li>
+                                <li>김치찌개</li>
+                                <li>제육볶음</li>
+                                <li>김치</li>
+                                <li>숙주나물</li>
+                                <li>요구르트</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>서울최강기숙학원</h3>
+                    <p>대한민국 최상위 입시 기숙학원</p>
+                    <div class="footer-icon">
+                        <a href="#" class="icon-link insta"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="icon-link youtube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="icon-link kakao-talk"><i class="fa-brands fa-kakao-talk"></i></a>
+                    </div>
+                </div>
+                <div class="footer-mid">
+                    <h4>바로가기</h4>
+                    <ul>
+                        <li><a href="program.html">2027 정규 수업 모집요강</a></li>
+                        <li><a href="program.html">2027 윈터 스쿨 모집요강</a></li>
+                        <li><a href="#">2026학년도 실적</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">학습 자료실</a></li>
+                        <li><a href="#">강사 목록</a></li>
+                        <li><a href="#">급식 메뉴</a></li>
+                        <li><a href="#">정규 수업관 시설 · 공간 체험</a></li>
+                        <li><a href="#">오시는 길 / 교통 안내</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <h4>문의하기</h4>
+                    <p><i class="fa-solid fa-phone"></i> 02-1234-5678</p>
+                    <p><i class="fa-solid fa-clock"></i> 평일 09:00 - 18:00</p>
+                    <p><i class="fa-solid fa-location-dot"></i> 서울 강남구 역삼동</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>서울최강기숙학원 대표이사: 홍길동</p>
+                <p>사업자등록번호: 123-12-98765</p>
+                <p>&copy; 2025 서울최강기숙학원. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">개인정보처리방침</a>
+                    <span>|</span>
+                    <a href="#">이용약관</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+    <script src="js/meal.js"></script>
+</body>
+
+</html>

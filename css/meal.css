@@ -6,7 +6,7 @@
 /* 메뉴 소개 */
 .meal-intro {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
 }
 
 .section-title {
@@ -15,7 +15,6 @@
     text-align: center;
     margin-bottom: 0.25rem;
     font-family: var(--font-family-primary);
-
     border-top: 2px solid var(--gray-border);
     padding-top: 2rem;
 }
@@ -57,7 +56,6 @@
     background: var(--black);
     color: var(--white);
     border-color: var(--black);
-    font-weight: 600;
 }
 
 /* 요일별 메뉴 콘텐츠 */
@@ -84,7 +82,12 @@
     border: 2px solid var(--black);
     border-radius: 12px;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
     transition: var(--transition);
+    min-height: 360px;
 }
 
 .menu-card:hover {
@@ -93,8 +96,10 @@
 }
 
 .menu-time {
+    color: var(--black);
     font-size: 2rem;
-    margin-bottom: 0.5rem;
+    font-weight: 500;
+    margin-bottom: 0.125rem;
     text-align: center;
 }
 
@@ -103,8 +108,8 @@
     font-weight: 600;
     color: var(--gray);
     text-align: center;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
     border-bottom: 2px solid var(--gray-border);
 }
 

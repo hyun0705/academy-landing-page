@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학습 자료실 - 서울최강기숙학원</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/program.css">
+    <link rel="stylesheet" href="css/material.css">
+    <link rel="stylesheet" href="css/scroll-animation.css">
+
+    <!-- 폰트 -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR:wght@200..900&display=swap"
+        rel="stylesheet">
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="220"
+                        height="60">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <g transform="translate(30, 30)">
+                            <polygon points="0,-18 15.6,-9 15.6,9 0,18 -15.6,9 -15.6,-9" fill="url(#grad1)" />
+                            <polygon points="0,-10 9,-5 9,5 0,10 -9,5 -9,-5" fill="white" opacity="0.9" />
+                        </g>
+                        <text x="65" y="35" font-family="Pretendard, sans-serif" font-size="20" font-weight="700"
+                            fill="#1e293b">
+                            서울최강기숙학원
+                        </text>
+                    </svg>
+                </a>
+            </div>
+            <div class="header-right">
+                <a href="login.html">로그인 / 회원가입</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero scroll-animate">
+        <div class="container">
+            <h1 class="hero-title">학습 자료실</h1>
+            <p class="hero-subtitle">과목별 학습 자료를 다운로드하세요</p>
+        </div>
+    </section>
+
+    <section class="materials">
+        <div class="container">
+            <!-- 필터 및 검색 -->
+            <div class="materials-filter scroll-animate">
+                <div class="filter-group">
+                    <button class="filter-btn active" data-subject="all">전체</button>
+                    <button class="filter-btn" data-subject="korean">국어</button>
+                    <button class="filter-btn" data-subject="english">영어</button>
+                    <button class="filter-btn" data-subject="math">수학</button>
+                    <button class="filter-btn" data-subject="society">사회탐구</button>
+                    <button class="filter-btn" data-subject="science">과학탐구</button>
+                </div>
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="자료 검색...">
+                    <button class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 자료 목록 -->
+            <div class="materials-list scroll-animate">
+                <!-- 국어 자료 -->
+                <div class="material-item" data-subject="korean">
+                    <div class="material-icon">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <div class="material-info">
+                        <div class="material-header">
+                            <h3 class="material-title">2027 수능 국어 문법 핵심 정리</h3>
+                            <span class="material-badge korean">국어</span>
+                        </div>
+                        <p class="material-desc">수능 국어 문법 필수 개념 총정리 (음운, 품사, 문장 구조)</p>
+                        <div class="material-meta">
+                            <span class="material-date"><i class="fa-regular fa-calendar"></i> 2025. 01. 20</span>
+                            <span class="material-size"><i class="fa-regular fa-file"></i> 2.5 MB</span>
+                            <span class="material-download"><i class="fa-solid fa-download"></i> 156</span>
+                        </div>
+                    </div>
+                    <a href="문법.pdf" download="2027_수능_국어_문법_핵심_정리.pdf" target="_self " class="download-btn">
+                        <i class="fa-solid fa-download"></i>
+                        다운로드
+                    </a>
+                </div>
+
+                <div class="material-item" data-subject="korean">
+                    <div class="material-icon">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <div class="material-info">
+                        <div class="material-header">
+                            <h3 class="material-title">현대시 감상 포인트 30선</h3>
+                            <span class="material-badge korean">국어</span>
+                        </div>
+                        <p class="material-desc">수능 빈출 현대시 작품 분석 및 감상 요령</p>
+                        <div class="material-meta">
+                            <span class="material-date"><i class="fa-regular fa-calendar"></i> 2025. 01. 18</span>
+                            <span class="material-size"><i class="fa-regular fa-file"></i> 3.8 MB</span>
+                            <span class="material-download"><i class="fa-solid fa-download"></i> 203</span>
+                        </div>
+                    </div>
+                    <a href="문법.pdf" download="문법.pdf" class="download-btn">
+                        <i class="fa-solid fa-download"></i>
+                        다운로드
+                    </a>
+                </div>
+
+                <!-- 영어 자료 -->
+                <div class="material-item" data-subject="english">
+                    <div class="material-icon">
+                        <i class="fa-solid fa-file-word"></i>
+                    </div>
+                    <div class="material-info">
+                        <div class="material-header">
+                            <h3 class="material-title">수능 영어 빈출 어휘 1000</h3>
+                            <span class="material-badge english">영어</span>
+                        </div>
+                        <p class="material-desc">최근 5개년 수능 기출 어휘 분석 및 예문 수록</p>
+                        <div class="material-meta">
+                            <span class="material-date"><i class="fa-regular fa-calendar"></i> 2025. 01. 19</span>
+                            <span class="material-size"><i class="fa-regular fa-file"></i> 1.2 MB</span>
+                            <span class="material-download"><i class="fa-solid fa-download"></i> 342</span>
+                        </div>
+                    </div>
+                    <a href="문법.pdf" download="문법.pdf" class="download-btn">
+                        <i class="fa-solid fa-download"></i>
+                        다운로드
+                    </a>
+                </div>
+
+                <div class="material-item" data-subject="english">
+                    <div class="material-icon">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <div class="material-info">
+                        <div class="material-header">
+                            <h3 class="material-title">영어 구문 독해 패턴 50</h3>
+                            <span class="material-badge english">영어</span>
+                        </div>
+                        <p class="material-desc">복잡한 영어 문장 구조 분석 및 해석 전략</p>
+                        <div class="material-meta">
+                            <span class="material-date"><i class="fa-regular fa-calendar"></i> 2025. 01. 17</span>
+                            <span class="material-size"><i class="fa-regular fa-file"></i> 4.1 MB</span>
+                            <span class="material-download"><i class="fa-solid fa-download"></i> 289</span>
+                        </div>
+                    </div>
+                    <a href="문법.pdf" download="문법.pdf" class="download-btn">
+                        <i class="fa-solid fa-download"></i>
+                        다운로드
+                    </a>
+                </div>
+
+                <!-- 수학 자료 -->
+                <div class="material-item" data-subject="math">
+                    <div class="material-icon">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <div class="material-info">
+                        <div class="material-header">
+                            <h3 class="material-title">미적분 킬러 문항 공략법</h3>
+                            <span class="material-badge math">수학</span>
+                        </div>
+                        <p class="material-desc">고난도 미적분 문제 유형별 접근 전략 (21~30번)</p>
+                        <div class="material-meta">
+                            <span class="material-date"><i class="fa-regular fa-calendar"></i> 2025. 01. 21</span>
+                            <span class="material-size"><i class="fa-regular fa-file"></i> 5.6 MB</span>
+                            <span class="material-download"><i class="fa-solid fa-download"></i> 478</span>
+                        </div>
+                    </div>
+                    <a href="문법.pdf" download="문법.pdf" class="download-btn">
+                        <i class="fa-solid fa-download"></i>
+                        다운로드
+                    </a>
+                </div>
+
+                <div class="material-item" data-subject="math">
+                    <div class="material-icon">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <div class="material-info">
+                        <div class="material-header">
+                            <h3 class="material-title">확률과 통계 완벽 정리</h3>
+                            <span class="material-badge math">수학</span>
+                        </div>
+                        <p class="material-desc">경우의 수, 확률, 통계 개념 및 필수 공식 정리</p>
+                        <div class="material-meta">
+                            <span class="material-date"><i class="fa-regular fa-calendar"></i> 2025. 01. 16</span>
+                            <span class="material-size"><i class="fa-regular fa-file"></i> 3.3 MB</span>
+                            <span class="material-download"><i class="fa-solid fa-download"></i> 391</span>
+                        </div>
+                    </div>
+                    <a href="문법.pdf" download="문법.pdf" class="download-btn">
+                        <i class="fa-solid fa-download"></i>
+                        다운로드
+                    </a>
+                </div>
+
+                <!-- 과학탐구 자료 -->
+                <div class="material-item" data-subject="science">
+                    <div class="material-icon">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <div class="material-info">
+                        <div class="material-header">
+                            <h3 class="material-title">물리학Ⅰ 역학 문제 풀이 전략</h3>
+                            <span class="material-badge science">과학탐구</span>
+                        </div>
+                        <p class="material-desc">힘과 운동, 에너지 단원 핵심 개념 및 문제 유형</p>
+                        <div class="material-meta">
+                            <span class="material-date"><i class="fa-regular fa-calendar"></i> 2025. 01. 15</span>
+                            <span class="material-size"><i class="fa-regular fa-file"></i> 4.7 MB</span>
+                            <span class="material-download"><i class="fa-solid fa-download"></i> 267</span>
+                        </div>
+                    </div>
+                    <a href="문법.pdf" download="문법.pdf" class="download-btn">
+                        <i class="fa-solid fa-download"></i>
+                        다운로드
+                    </a>
+                </div>
+
+                <div class="material-item" data-subject="science">
+                    <div class="material-icon">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <div class="material-info">
+                        <div class="material-header">
+                            <h3 class="material-title">화학Ⅰ 몰 계산 완벽 마스터</h3>
+                            <span class="material-badge science">과학탐구</span>
+                        </div>
+                        <p class="material-desc">몰 농도, 화학 반응식, 용액 농도 계산 총정리</p>
+                        <div class="material-meta">
+                            <span class="material-date"><i class="fa-regular fa-calendar"></i> 2025. 01. 14</span>
+                            <span class="material-size"><i class="fa-regular fa-file"></i> 2.9 MB</span>
+                            <span class="material-download"><i class="fa-solid fa-download"></i> 312</span>
+                        </div>
+                    </div>
+                    <a href="문법.pdf" download="문법.pdf" class="download-btn">
+                        <i class="fa-solid fa-download"></i>
+                        다운로드
+                    </a>
+                </div>
+
+                <!-- 사회탐구 자료 -->
+                <div class="material-item" data-subject="society">
+                    <div class="material-icon">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <div class="material-info">
+                        <div class="material-header">
+                            <h3 class="material-title">한국사 근현대사 연표 정리</h3>
+                            <span class="material-badge society">사회탐구</span>
+                        </div>
+                        <p class="material-desc">개항기부터 현대까지 주요 사건 흐름 도표</p>
+                        <div class="material-meta">
+                            <span class="material-date"><i class="fa-regular fa-calendar"></i> 2025. 01. 13</span>
+                            <span class="material-size"><i class="fa-regular fa-file"></i> 1.8 MB</span>
+                            <span class="material-download"><i class="fa-solid fa-download"></i> 421</span>
+                        </div>
+                    </div>
+                    <a href="문법.pdf" download="문법.pdf" class="download-btn">
+                        <i class="fa-solid fa-download"></i>
+                        다운로드
+                    </a>
+                </div>
+
+            </div>
+            <!-- 자료 없음 메시지 -->
+            <div class="no-results" style="display: none;">
+                <i class="fa-regular fa-folder-open"></i>
+                <p>검색 결과가 없습니다</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>서울최강기숙학원</h3>
+                    <p>대한민국 최상위 입시 기숙학원</p>
+                    <div class="footer-icon">
+                        <a href="#" class="icon-link insta"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="icon-link youtube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="icon-link kakao-talk"><i class="fa-brands fa-kakao-talk"></i></a>
+                    </div>
+                </div>
+                <div class="footer-mid">
+                    <h4>바로가기</h4>
+                    <ul>
+                        <li><a href="program.html">2027 정규 수업 모집요강</a></li>
+                        <li><a href="program.html">2027 윈터 스쿨 모집요강</a></li>
+                        <li><a href="achievement.html">2026학년도 실적</a></li>
+                        <li><a href="notice.html">공지사항</a></li>
+                        <li><a href="material.html">학습 자료실</a></li>
+                        <li><a href="meal.html">급식 메뉴</a></li>
+                        <li><a href="location.html">오시는 길 / 교통 안내</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <h4>문의하기</h4>
+                    <p><i class="fa-solid fa-phone"></i> 02-1234-5678</p>
+                    <p><i class="fa-solid fa-clock"></i> 평일 09:00 - 18:00</p>
+                    <p><i class="fa-solid fa-location-dot"></i> 서울 강남구 역삼동</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>서울최강기숙학원 대표이사: 홍길동</p>
+                <p>사업자등록번호: 123-12-98765</p>
+                <p>&copy; 2025 서울최강기숙학원. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">개인정보처리방침</a>
+                    <span>|</span>
+                    <a href="#">이용약관</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+    <script src="js/material.js"></script>
+</body>
+
+</html>

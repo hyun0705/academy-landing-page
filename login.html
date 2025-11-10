@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인/회원가입 - 서울최강기숙학원</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/program.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/scroll-animation.css">
+
+    <!-- 폰트 -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR:wght@200..900&display=swap"
+        rel="stylesheet">
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="220"
+                        height="60">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <g transform="translate(30, 30)">
+                            <polygon points="0,-18 15.6,-9 15.6,9 0,18 -15.6,9 -15.6,-9" fill="url(#grad1)" />
+                            <polygon points="0,-10 9,-5 9,5 0,10 -9,5 -9,-5" fill="white" opacity="0.9" />
+                        </g>
+                        <text x="65" y="35" font-family="Pretendard, sans-serif" font-size="20" font-weight="700"
+                            fill="#1e293b">
+                            서울최강기숙학원
+                        </text>
+                    </svg>
+                </a>
+            </div>
+            <div class="header-right">
+                <a href="login.html">로그인 / 회원가입</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="login-section">
+        <div class="login-container">
+            <!-- 탭 메뉴 -->
+            <div class="login-tabs">
+                <button class="tab-btn active" data-tab="login">로그인</button>
+                <button class="tab-btn" data-tab="signup">회원가입</button>
+            </div>
+
+            <!-- 로그인 폼 -->
+            <div class="tab-content active" id="login-tab">
+                <h2 class="form-title">로그인</h2>
+                <p class="form-subtitle">서울최강기숙학원에 오신 것을 환영합니다</p>
+
+                <form class="login-form" id="login-form">
+                    <div class="form-group">
+                        <label for="login-id">
+                            아이디
+                        </label>
+                        <input type="text" id="login-id" name="login-id" required placeholder="아이디를 입력하세요">
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">
+                            비밀번호
+                        </label>
+                        <div class="password-wrapper">
+                            <input type="password" id="login-password" name="login-password" required
+                                placeholder="비밀번호를 입력하세요">
+                            <button type="button" class="toggle-password">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="remember-me">
+                            <span>로그인 상태 유지</span>
+                        </label>
+                        <a href="#" class="find-link">아이디/비밀번호 찾기</a>
+                    </div>
+
+                    <button type="submit" class="submit-btn">로그인</button>
+                </form>
+            </div>
+
+            <!-- 회원가입 폼 -->
+            <div class="tab-content" id="signup-tab">
+                <h2 class="form-title">회원가입</h2>
+                <p class="form-subtitle">새로운 계정을 만들어주세요</p>
+
+                <form class="login-form" id="signup-form">
+                    <div class="form-group">
+                        <label for="signup-name">
+                            <i class="fa-solid fa-user"></i>
+                            이름<span class="required">*</span>
+                        </label>
+                        <input type="text" id="signup-name" name="signup-name" required placeholder="이름을 입력하세요">
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-id">
+                            <i class="fa-solid fa-id-card"></i>
+                            아이디<span class="required">*</span>
+                        </label>
+                        <div class="input-with-btn">
+                            <input type="text" id="signup-id" name="signup-id" required
+                                placeholder="아이디를 입력하세요 (4-12자)">
+                            <button type="button" class="check-btn">중복확인</button>
+                        </div>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-password">
+                            <i class="fa-solid fa-lock"></i>
+                            비밀번호<span class="required">*</span>
+                        </label>
+                        <div class="password-wrapper">
+                            <input type="password" id="signup-password" name="signup-password" required
+                                placeholder="비밀번호를 입력하세요 (8자 이상)">
+                            <button type="button" class="toggle-password">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-password-confirm">
+                            <i class="fa-solid fa-lock"></i>
+                            비밀번호 확인<span class="required">*</span>
+                        </label>
+                        <div class="password-wrapper">
+                            <input type="password" id="signup-password-confirm" name="signup-password-confirm" required
+                                placeholder="비밀번호를 다시 입력하세요">
+                            <button type="button" class="toggle-password">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-phone">
+                            <i class="fa-solid fa-phone"></i>
+                            전화번호<span class="required">*</span>
+                        </label>
+                        <input type="tel" id="signup-phone" name="signup-phone" required placeholder="010-1234-5678">
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-grade">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            학년<span class="required">*</span>
+                        </label>
+                        <select id="signup-grade" name="signup-grade" required>
+                            <option value="" disabled selected>학년을 선택하세요</option>
+                            <option value="예비고1">예비 고1</option>
+                            <option value="고1">고1</option>
+                            <option value="고2">고2</option>
+                            <option value="고3">고3</option>
+                            <option value="N수생">N수생</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="agree-all">
+                            <span>전체 동의</span>
+                        </label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="agree-terms" required>
+                            <span>이용약관 동의<span class="required">*</span></span>
+                        </label>
+                        <a href="#" class="view-link">보기</a>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="agree-privacy" required>
+                            <span>개인정보 수집 및 이용 동의<span class="required">*</span></span>
+                        </label>
+                        <a href="#" class="view-link">보기</a>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="agree-marketing">
+                            <span>마케팅 정보 수신 동의 (선택)</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">회원가입</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>서울최강기숙학원</h3>
+                    <p>대한민국 최상위 입시 기숙학원</p>
+                    <div class="footer-icon">
+                        <a href="https://www.instagram.com" class="icon-link insta"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com" class="icon-link youtube"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="icon-link kakao-talk"><i class="fa-brands fa-kakao-talk"></i></a>
+                    </div>
+                </div>
+                <div class="footer-mid">
+                    <h4>바로가기</h4>
+                    <ul>
+                        <li><a href="program.html#regular">2027 정규 수업 모집요강</a></li>
+                        <li><a href="program.html#winter">2027 윈터 스쿨 모집요강</a></li>
+                        <li><a href="achievement.html">2026학년도 실적</a></li>
+                        <li><a href="notice.html">공지사항</a></li>
+                        <li><a href="material.html">학습 자료실</a></li>
+                        <li><a href="meal.html">급식 메뉴</a></li>
+                        <li><a href="location.html">오시는 길 / 교통 안내</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <h4>문의하기</h4>
+                    <p><i class="fa-solid fa-phone"></i> 02-1234-5678</p>
+                    <p><i class="fa-solid fa-clock"></i> 평일 09:00 - 18:00</p>
+                    <p><i class="fa-solid fa-location-dot"></i> 서울 강남구 역삼동</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>서울최강기숙학원 대표이사: 홍길동</p>
+                <p>사업자등록번호: 123-12-98765</p>
+                <p>&copy; 2025 서울최강기숙학원. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">개인정보처리방침</a>
+                    <span>|</span>
+                    <a href="#">이용약관</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button class="scroll-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

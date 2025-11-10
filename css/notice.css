@@ -1,0 +1,169 @@
+/* 공지사항 섹션 */
+.notice {
+    padding: 1rem 0;
+}
+
+/* 공지사항 목록 */
+.notice-list {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 공지사항 아이템 */
+.notice-item {
+    background: var(--white);
+    border: 1.5px solid var(--black);
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.notice-item:hover {
+    box-shadow: var(--shadow-md);
+}
+
+/* 공지사항 헤더 */
+.notice-header {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+.notice-header:hover {
+    background: var(--gray-light);
+}
+
+.notice-number {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gray);
+    min-width: 2rem;
+}
+
+.notice-title {
+    flex: 1;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--black);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.notice-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--white);
+    background: var(--black);
+}
+
+.notice-badge.important {
+    background: #ef4747;
+}
+
+.notice-date {
+    font-size: 0.875rem;
+    color: var(--gray);
+    white-space: nowrap;
+}
+
+.notice-toggle {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: var(--gray-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.notice-toggle:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
+.notice-toggle i {
+    transition: transform 0.3s ease;
+}
+
+.notice-item.active .notice-toggle i {
+    transform: rotate(180deg);
+}
+
+/* 공지사항 내용 */
+.notice-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0rem 2rem;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    border-top: 1px solid var(--gray-border);
+}
+
+.notice-item.active .notice-content {
+    max-height: 1000px;
+    padding: 0rem 2rem;
+
+}
+
+.notice-content-inner {
+    padding: 1rem 0;
+}
+
+.notice-content p {
+    font-size: 1rem;
+    color: var(--gray);
+    margin: 0.5rem 0;
+}
+
+.notice-content strong {
+    color: var(--black);
+    font-weight: 600;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+    .notice-header {
+        padding: 1rem 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .notice-number {
+        min-width: 20px;
+        font-size: 0.875rem;
+    }
+
+    .notice-title {
+        font-size: 1rem;
+        flex-basis: 100%;
+        order: 1;
+    }
+
+    .notice-date {
+        font-size: 0.75rem;
+        order: 2;
+    }
+
+    .notice-toggle {
+        order: 3;
+        width: 32px;
+        height: 32px;
+    }
+
+    .notice-content {
+        padding: 0 1.5rem;
+    }
+
+    .notice-item.active .notice-content {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+}

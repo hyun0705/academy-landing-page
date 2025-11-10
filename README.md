@@ -1,1 +1,1 @@
-powerfulacademy.p-e.kr
+ [Click here to try](https://powerfulacademy.p-e.kr)
